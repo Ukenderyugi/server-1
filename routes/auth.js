@@ -10,6 +10,7 @@ router.post('/register',async(req,res)=>{
         res.status(201).json({message:'user registersed succesfully'});
     }catch(error){
         res.status(500).json({error:error.message});
+        
     }
 })
 router.post('/login',async(req,res)=>{
